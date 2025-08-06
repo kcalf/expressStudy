@@ -75,7 +75,6 @@ export const replaceUser = async (req, res, next) => {
 // };
 
 // 삭제
-
 export const deleteUser = async (req, res, next) => {
   try {
     const userId = req.params.id
@@ -86,10 +85,3 @@ export const deleteUser = async (req, res, next) => {
     next(err);
   }
 };
-
-// export const deleteUser = (req, res) => {
-//   const id = Number(req.params.id);
-//   users = users.filter(u => u.id !== id);
-//   res.status(204).send(); // No Content
-// };
-
